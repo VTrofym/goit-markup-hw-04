@@ -90,8 +90,8 @@ button {
 
     display: flex;
     align-items: center;
-
-    height: 80px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .header-border {
@@ -170,6 +170,19 @@ button {
     margin-left: auto;
 }
 
+/* .mail-tel::before {
+    margin-bottom: 56px;
+
+    display: block;
+    content: "";
+    height: 120px;
+    outline: 1px solid tomato;
+    background-image: url(../images/svg/header/envelope.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--background-color-grey);
+} */
+
 /* MAIN */
 
 /* Блок Заголовок */
@@ -178,8 +191,19 @@ button {
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
 
+    
     background-color: var(--background-color-black);
+    background: rgba(47, 48, 58, 0.4);
+    background-image: url(../images/main-jpg-squoosh/Img-6-2.jpg);
+    max-width: 1600px;
+    min-height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    
 
     outline: 1px solid tomato;
 }
@@ -226,12 +250,61 @@ button {
     margin-right: 30px;
 }
 
+.li-s1-1::before {
+    margin-bottom: 56px;
+
+    display: block;
+    content: "";
+    height: 120px;
+    outline: 1px solid tomato;
+    background-image: url(../images/svg/center/antenna.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--background-color-grey);
+}
+
+.li-s1-2::before {
+    margin-bottom: 56px;
+
+    display: block;
+    content: "";
+    height: 120px;
+    outline: 1px solid tomato;
+    background-image: url(../images/svg/center/clock.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--background-color-grey);
+}
+
+.li-s1-3::before {
+    margin-bottom: 56px;
+
+    display: block;
+    content: "";
+    height: 120px;
+    outline: 1px solid tomato;
+    background-image: url(../images/svg/center/diagram.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--background-color-grey);
+}
+
+.li-s1-4::before {
+    margin-bottom: 56px;
+
+    display: block;
+    content: "";
+    height: 120px;
+    outline: 1px solid tomato;
+    background-image: url(../images/svg/center/astronaut.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--background-color-grey);
+}
+
 .li-s1:last-child {
     margin-right: 0;
 }
-
-
-
 
 .title-h2,
 .list-s1 {
@@ -259,6 +332,7 @@ button {
     line-height: 1.7;
     letter-spacing: 0.03em;
 }
+
 
 /* виды работ */
 
@@ -357,6 +431,17 @@ button {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
+}
+
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    /* display: flex; */
+}
+
+.main-clients {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* контакты поддержки */
@@ -548,3 +633,88 @@ button {
     margin-bottom: 0;
 }
 
+
+
+/* html {
+    box-sizing: border-box;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196f3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196f3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    display: block
+} */
