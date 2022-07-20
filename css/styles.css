@@ -8,6 +8,67 @@ html {
     box-sizing: inherit;
 }
 
+body {
+    margin: 0;
+    
+    background-color: var(--font-сolor-white);
+    color: var(--font-сolor-black-p);
+    font-family: Roboto, sans-serif;
+
+    /* font-family: 'Raleway', sans-serif; */
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+address {}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
 :root {
     --background-button-main: #188CE8;
     --background-color-white: #FFFFFF;
@@ -21,29 +82,6 @@ html {
     --font-сolor-black-other: #212121;
     --font-color-border: #ECECEC;
     --font-color-footer-mail-tel: rgba(255, 255, 255, 0.6);
-}
-
-body {
-    margin: 0;
-    
-    background-color: var(--font-сolor-white);
-    color: var(--font-сolor-black-p);
-    font-family: Roboto, sans-serif;
-
-    /* font-family: 'Raleway', sans-serif; */
-}
-
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-button {
-    font-family: inherit;
-    cursor: pointer;
 }
 
 .button-main {
@@ -82,8 +120,7 @@ button {
     outline: 2px solid tomato;
 }
 
-/* Header */
-/* Logo */
+/*---------- Header-------------- */
 
 .header > .container {
     outline: 1px solid tomato;
@@ -97,6 +134,8 @@ button {
 .header-border {
     border-bottom: 1px solid var(--font-color-border);
 }
+
+/* ---------Logo------------ */
 
 .logo {
     font-size: 26px;
@@ -118,7 +157,7 @@ button {
     font-family: Raleway, sans-serif;
 }
 
-/* Nav */
+/*------ Nav ---------*/
 
 .block-nav {
     margin-left: 93px;
@@ -134,11 +173,6 @@ button {
 
 .link.studiya.first {
     color: var(--font-сolor-blue);
-}
-
-.link-pf-main {
-    margin-left: 50px;
-    margin-right: 50px;
 }
 
 .site-nav, .mail-tel {
@@ -157,33 +191,47 @@ button {
     color: var(--font-сolor-black-p);
 }
 
-.tel-main-head {
+.link-tel {
     margin-left: 30px;
-}
-
-.mail-tel .link:hover,
-.mail-tel .link:focus {
-    color: var(--font-сolor-blue);
 }
 
 .mail-tel {
     margin-left: auto;
 }
 
-/* .mail-tel::before {
-    margin-bottom: 56px;
+.link.mail, .link.tel {
+    display: flex;
+    align-items: center;
+}
 
+.link.mail:hover,
+.link.mail:focus,
+.link.tel:hover,
+.link.tel:focus {
+color: var(--background-button-main);
+}
+
+.link.mail:hover .link-evenlope,
+.link.mail:focus .link-evenlope,
+.link.tel:hover .link-smartphone,
+.link.tel:focus .link-smartphone {
+fill: var(--background-button-main);
+}
+
+.link-evenlope,
+.link-smartphone {
+    margin-right: 10px;
     display: block;
-    content: "";
-    height: 120px;
-    outline: 1px solid tomato;
-    background-image: url(../images/svg/header/envelope.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: var(--background-color-grey);
-} */
+}
 
-/* MAIN */
+.link-pf-main {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* ------------MAIN--------------- */
 
 /* Блок Заголовок */
 
@@ -194,24 +242,17 @@ button {
     margin-left: auto;
     margin-right: auto;
 
-    
     background-color: var(--background-color-black);
-    background: rgba(47, 48, 58, 0.4);
-    background-image: url(../images/main-jpg-squoosh/Img-6-2.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main-jpg-squoosh/Img-6-2.jpg);
     max-width: 1600px;
     min-height: 600px;
     background-position: center;
     background-repeat: no-repeat;
-    
-    
 
     outline: 1px solid tomato;
 }
 
-.h1 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-
+.hero {
     color: var(--font-сolor-white);
     font-weight: 900;
     font-size: 44px;
@@ -225,19 +266,6 @@ button {
     padding-bottom: 94px;
 
     outline: 1px solid tomato;
-}
-
-.visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
 }
 
 .list-s1 {
@@ -380,15 +408,16 @@ button {
 
     background-color: var(--background-color-white);
     margin-right: 30px;
+    padding-bottom: 30px;
 }
 
 .team-bg:last-child {
-    padding-right: 0;
+    margin-right: 0;
 }
 
 .team-description {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 16px;
 }
 
 .title-s3 {
@@ -410,7 +439,6 @@ button {
     display: flex;
 }
 
-
 .name-s3 {
     margin-top: 0;
     margin-bottom: 10px;
@@ -425,7 +453,6 @@ button {
 .job-s3 {
     margin-top: 0px;
     margin-bottom: 0px;
-    /* padding-bottom: 30px; */
     text-align: center;
 
     font-weight: 400;
@@ -433,16 +460,87 @@ button {
     line-height: 1.19;
 }
 
+
+/* Команда социальные сети */
+
+.team-soc-net {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.soc-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    fill: #AFB1B8;
+}
+
+.soc-link:hover,
+.soc-link:focus {
+background-color: #2196F3;
+fill: #FFFFFF;
+}
+
+/* --------Постоянные клиенты---------- */
+
+.container.footer {
+    display: flex;
+}
+
+.footer-logo-adress {
+    margin-right: 70px;
+}
+
 .clients {
     padding-top: 94px;
     padding-bottom: 94px;
-    /* display: flex; */
 }
 
 .main-clients {
+    margin-bottom: 50px;
+    display: block;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--font-сolor-black-other);
+}
+
+
+
+.main-clients-list {
     margin-top: 0;
     margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    
 }
+
+.main-clients-li {
+    color: AFB1B8;
+    
+}
+
+.name-company {
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    
+}
+
+.inside {
+
+}
+
 
 /* контакты поддержки */
 
@@ -494,12 +592,20 @@ button {
     margin-top: 20px;
 }
 
+.conect {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: var(--font-сolor-white)
+}
 
 /* Portfolio.html */
-
-
-
-
 
 .main-portfolio {
     outline: 1px solid tomato;
@@ -606,6 +712,12 @@ button {
     margin-bottom: 30px;
 }
 
+.li-pf-img:hover,
+.li-pf-img:focus {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .li-pf-img:nth-child(3n) {
     margin-right: 0px;
 }
@@ -632,89 +744,3 @@ button {
     margin-top: 4px;
     margin-bottom: 0;
 }
-
-
-
-/* html {
-    box-sizing: border-box;
-}
-
-.visually-hidden {
-    position: absolute !important;
-    clip: rect(1px 1px 1px 1px);
-    clip: rect(1px, 1px, 1px, 1px);
-    padding: 0 !important;
-    border: 0 !important;
-    height: 1px !important;
-    width: 1px !important;
-    overflow: hidden;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-:root {
-    --primary-text-color: #757575;
-    --title-text-color: #212121;
-    --accent-color: #2196f3;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    margin: 0;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-html {
-    box-sizing: border-box;
-}
-
-.visually-hidden {
-    position: absolute !important;
-    clip: rect(1px 1px 1px 1px);
-    clip: rect(1px, 1px, 1px, 1px);
-    padding: 0 !important;
-    border: 0 !important;
-    height: 1px !important;
-    width: 1px !important;
-    overflow: hidden;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-:root {
-    --primary-text-color: #757575;
-    --title-text-color: #212121;
-    --accent-color: #2196f3;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    margin: 0;
-}
-
-img {
-    display: block
-} */
