@@ -14,6 +14,7 @@ body {
     background-color: var(--font-сolor-white);
     color: var(--font-сolor-black-p);
     font-family: Roboto, sans-serif;
+    letter-spacing: var(--letter-spacing-m)
 
     /* font-family: 'Raleway', sans-serif; */
 }
@@ -82,6 +83,9 @@ button {
     --font-сolor-black-other: #212121;
     --font-color-border: #ECECEC;
     --font-color-footer-mail-tel: rgba(255, 255, 255, 0.6);
+    --letter-spacing-s: 0.02em;
+    --letter-spacing-m: 0.03em;
+    --letter-spacing-l: 0.06em;
 }
 
 .button-main {
@@ -99,6 +103,7 @@ button {
     font-size: 16px;
     line-height: 1.88;
     min-width: 200px;
+    letter-spacing: var(--letter-spacing-l);
 }
 
 .button-main:hover,
@@ -145,16 +150,19 @@ button {
 .logo-blue {
     color: var(--font-сolor-blue);
     font-family: Raleway, sans-serif;
+    letter-spacing: var(--letter-spacing-m);
 }
 
 .logo-black {
     color: var(--font-сolor-black-logo);
     font-family: Raleway, sans-serif;
+    letter-spacing: var(--letter-spacing-m);
 }
 
 .logo-white {
     color: var(--font-сolor-white);
     font-family: Raleway, sans-serif;
+    letter-spacing: var(--letter-spacing-m);
 }
 
 /*------ Nav ---------*/
@@ -185,6 +193,7 @@ button {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.15;
+    letter-spacing: var(--letter-spacing-l);
 }
 
 .mail-tel .link {
@@ -257,6 +266,7 @@ fill: var(--background-button-main);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
+    letter-spacing: var(--letter-spacing-l);
 }
 
 /* акценты в работе */
@@ -278,17 +288,15 @@ fill: var(--background-button-main);
     margin-right: 30px;
 }
 
-.for-business-link {
-}
-
 .forbusiness-li-div {
-    margin-bottom: 56px;
+    margin-bottom: 30px;
     height: 120px;
     outline: 1px solid tomato;
     border-radius: 4px;
     background-color: var(--background-color-grey);
-    text-align: center;
-    padding: 25px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -653,6 +661,28 @@ fill: var(--font-сolor-white);
     display: flex;
 }
 
+.soc-link-footer {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    fill: var(--font-сolor-white);
+    background-color:  rgba(255, 255, 255, 0.1);
+    margin-right: 10px;
+}
+
+.footer-li-link.soc-link-footer {
+    margin-right: 0;
+}
+
+
+.soc-link-footer:hover,
+.soc-link-footer:focus {
+    background-color: var(--background-color-blue);
+}
+
 
 
 /* Portfolio.html */
@@ -784,6 +814,7 @@ fill: var(--font-сolor-white);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
+    letter-spacing: var(--letter-spacing-l);
 }
 
 .p-portfolio {
