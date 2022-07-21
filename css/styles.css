@@ -278,7 +278,28 @@ fill: var(--background-button-main);
     margin-right: 30px;
 }
 
-.li-s1-1::before {
+.for-business-link {
+}
+
+.forbusiness-li-div {
+    margin-bottom: 56px;
+    height: 120px;
+    outline: 1px solid tomato;
+    border-radius: 4px;
+    background-color: var(--background-color-grey);
+    text-align: center;
+    padding: 25px 100px;
+}
+
+
+
+
+
+
+
+
+
+/* .li-s1-1::before {
     margin-bottom: 56px;
 
     display: block;
@@ -328,7 +349,7 @@ fill: var(--background-button-main);
     background-repeat: no-repeat;
     background-position: center;
     background-color: var(--background-color-grey);
-}
+} */
 
 .li-s1:last-child {
     margin-right: 0;
@@ -483,8 +504,8 @@ fill: var(--background-button-main);
 
 .soc-link:hover,
 .soc-link:focus {
-background-color: #2196F3;
-fill: #FFFFFF;
+background-color: var(--background-color-blue);
+fill: var(--font-сolor-white);
 }
 
 /* --------Постоянные клиенты---------- */
@@ -521,32 +542,46 @@ fill: #FFFFFF;
     margin-bottom: 0;
     display: flex;
     justify-content: space-between;
-    
 }
 
-.main-clients-li {
-    color: AFB1B8;
-    
-}
 
-.name-company {
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
+.main-clients-link:hover .name-company,
+.main-clients-link:focus .name-company {
+    fill: var(--font-сolor-blue)
+}
+    
+
+.main-clients-link {
+    color: #AFB1B8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 170px;
     height: 92px;
-    
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
 }
 
-.inside {
-
+.main-clients-link:hover,
+.main-clients-link:focus {
+    border: 1px solid #2196F3;
 }
+
+
+
+.name-company {
+    width: 106px;
+    height: 60px;
+    fill: #AFB1B8;
+}
+
+
 
 
 /* контакты поддержки */
 
 .footer {
     background-color: var(--background-color-black);
-    color: var(--font-сolor-white);
 
     outline: 1px solid tomato;
     padding-top: 60px;
@@ -585,6 +620,12 @@ fill: #FFFFFF;
     color: var(--font-сolor-blue);
 }
 
+
+
+.footer-container {
+    display: flex;
+}
+
 .address {
     margin-top: 0;
     margin-bottom: 0;
@@ -592,10 +633,13 @@ fill: #FFFFFF;
     margin-top: 20px;
 }
 
+.footer-connent-networks {
+    padding: 12px;
+}
+
 .conect {
     margin-top: 0;
     margin-bottom: 0;
-    text-align: center;
 
     font-size: 14px;
     line-height: 1.14;
@@ -604,6 +648,12 @@ fill: #FFFFFF;
     
     color: var(--font-сolor-white)
 }
+
+.team-soc-net-footer {
+    display: flex;
+}
+
+
 
 /* Portfolio.html */
 
@@ -744,3 +794,22 @@ fill: #FFFFFF;
     margin-top: 4px;
     margin-bottom: 0;
 }
+
+
+
+
+
+/* .div {
+
+}
+
+.ul {
+    display: flex;
+}
+
+.li {
+    width: 100px;
+    height: 100px;
+    background-color: #188CE8;
+    margin-bottom: 10px;
+} */
