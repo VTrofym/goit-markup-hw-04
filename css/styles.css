@@ -30,7 +30,9 @@ a {
     color: currentColor;
 }
 
-address {}
+address {
+    
+}
 
 button {
     font-family: inherit;
